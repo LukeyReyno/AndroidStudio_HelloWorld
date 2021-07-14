@@ -8,106 +8,93 @@
 
     <TextView
         android:id="@+id/helloWorldText"
-        android:layout_width="152dp"
-        android:layout_height="55dp"
+        android:layout_width="249dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="90dp"
         android:text="Hello World!"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextPersonEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextPersonEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonEmail" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:onClick="onBtnClick"
         android:text="@string/click_me"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/helloWorldText"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintEnd_toEndOf="@+id/helloWorldText"
+        app:layout_constraintStart_toStartOf="@+id/helloWorldText"
+        app:layout_constraintTop_toBottomOf="@+id/helloWorldText" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextPersonName"
         android:layout_width="250dp"
         android:layout_height="49dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
+        android:hint="First Name"
         android:inputType="textPersonName"
-        android:text="First Name"
-        app:layout_constraintBottom_toTopOf="@+id/helloWorldText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonLastName"
+        android:id="@+id/editTextPersonLastName"
         android:layout_width="250dp"
         android:layout_height="49dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
+        android:hint="Last Name"
         android:inputType="textPersonName"
-        android:text="Last Name"
-        app:layout_constraintBottom_toTopOf="@+id/helloWorldText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonEmail"
+        android:id="@+id/editTextPersonEmail"
         android:layout_width="250dp"
         android:layout_height="49dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textPersonName"
-        android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/helloWorldText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonLastName"
-        app:layout_constraintVertical_bias="0.456" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextPersonLastName"
+        app:layout_constraintStart_toStartOf="@+id/editTextPersonLastName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonLastName" />
 
     <TextView
         android:id="@+id/textViewFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
         android:text="First Name"
-        app:layout_constraintBottom_toTopOf="@+id/textViewLastName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.898" />
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
         android:id="@+id/textViewLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Last Name"
-        app:layout_constraintBottom_toTopOf="@+id/textViewEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewFirstName"
+        app:layout_constraintStart_toStartOf="@+id/textViewFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirstName" />
 
     <TextView
         android:id="@+id/textViewEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Email"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewLastName"
+        app:layout_constraintStart_toStartOf="@+id/textViewLastName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLastName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

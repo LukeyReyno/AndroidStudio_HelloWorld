@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         TextView lastNameText = findViewById(R.id.textViewLastName);
         TextView emailText = findViewById(R.id.textViewEmail);
 
-        EditText firstNameInput = findViewById(R.id.editTextTextPersonName);
-        EditText lastNameInput = findViewById(R.id.editTextTextPersonLastName);
-        EditText emailInput = findViewById(R.id.editTextTextPersonEmail);
+        EditText firstNameInput = findViewById(R.id.editTextPersonName);
+        EditText lastNameInput = findViewById(R.id.editTextPersonLastName);
+        EditText emailInput = findViewById(R.id.editTextPersonEmail);
 
         helloTxt.setText("Hello, " + firstNameInput.getText().toString() + lastNameInput.getText().toString());
         firstNameText.setText("First Name: " + firstNameInput.getText().toString());
