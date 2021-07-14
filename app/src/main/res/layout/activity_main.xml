@@ -2,9 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
 
     <TextView
         android:id="@+id/helloWorldText"
@@ -20,14 +23,13 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPersonEmail" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:onClick="onBtnClick"
+        android:onClick="submit"
         android:text="@string/click_me"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/helloWorldText"
         app:layout_constraintStart_toStartOf="@+id/helloWorldText"
         app:layout_constraintTop_toBottomOf="@+id/helloWorldText" />
 
@@ -65,7 +67,8 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/editTextPersonLastName"
         app:layout_constraintStart_toStartOf="@+id/editTextPersonLastName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPersonLastName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonLastName"
+        tools:ignore="TextFields" />
 
     <TextView
         android:id="@+id/textViewFirstName"
@@ -73,9 +76,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
         android:text="First Name"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/submitBtn"
+        app:layout_constraintStart_toStartOf="@+id/submitBtn"
+        app:layout_constraintTop_toBottomOf="@+id/submitBtn" />
 
     <TextView
         android:id="@+id/textViewLastName"
@@ -96,5 +99,16 @@
         app:layout_constraintEnd_toEndOf="@+id/textViewLastName"
         app:layout_constraintStart_toStartOf="@+id/textViewLastName"
         app:layout_constraintTop_toBottomOf="@+id/textViewLastName" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/helloWorldText"
+        app:layout_constraintTop_toBottomOf="@+id/helloWorldText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
